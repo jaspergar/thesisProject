@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="match_parent"
+    android:layout_marginRight="2dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/toprated_performerImage_id"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imageView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/suggested_barImage_id"-->
+                <!--app:layout_constraintEnd_toEndOf="@+id/suggested_barImage_id"-->
+                <!--app:layout_constraintHorizontal_bias="0.0"-->
+                <!--app:layout_constraintStart_toStartOf="@+id/suggested_barImage_id"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/suggested_barImage_id"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/gradient_bg" />-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rating_round">
+
+                    <TextView
+                        android:id="@+id/toprated_performerRating_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center"
+                        android:text="4.5"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/toprated_performerName_id"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:text="performer Name" />
+
+            <TextView
+                android:id="@+id/toprated_performerType_id"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Performer type" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".activities.PerformerProfile">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:background="@color/colorPrimaryLight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/performerProfile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/dj" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="82dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginStart="298dp"-->
+                <!--android:layout_marginTop="50dp"-->
+                <!--android:layout_marginEnd="29dp"-->
+                <!--android:layout_marginBottom="140dp"-->
+                <!--android:background="@drawable/rating_round">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/performerProfile_score"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="4.5"-->
+                    <!--android:textColor="@color/colorPrimaryLight"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</RelativeLayout>-->
+
+            <Button
+                android:id="@+id/performerProfile_btnFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="39dp"
+                android:background="@drawable/follow_round"
+                android:text="follow"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/performerProfile_btnunFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="39dp"
+                android:visibility="gone"
+                android:textSize="12dp"
+                android:background="@drawable/unfollow_round"
+                android:text="following"
+                android:textColor="@color/colorPrimaryLight" />
+
+            <TextView
+                android:id="@+id/performerProfile_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/performerProfile_Category"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/cardview1"
+                android:text="Jasper"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/performerProfile_lname"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_above="@+id/performerProfile_Category"-->
+                <!--android:layout_marginStart="7dp"-->
+                <!--android:layout_marginBottom="4dp"-->
+                <!--android:layout_toEndOf="@+id/performerProfile_fname"-->
+                <!--android:text="Gar"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/performerProfile_Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/performerProfile_Type"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/cardview1"
+                android:text="Category"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/performerProfile_Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cardview1"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toEndOf="@+id/cardview1"
+                android:text="Performer Type"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/performerProfile_numFollowers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/performerProfile_star"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-75dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/cardview1"
+                android:text="299" />
+
+            <TextView
+                android:id="@+id/performerProfile_Followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/performerProfile_numFollowers"
+                android:text="followers" />
+
+            <TextView
+                android:id="@+id/performerProfile_numFollowing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/performerProfile_Followers"
+                android:text="300" />
+
+            <TextView
+                android:id="@+id/performerProfile_Following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/performerProfile_numFollowing"
+                android:text="following" />
+
+
+
+            <RatingBar
+                android:id="@+id/performerProfile_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="0"
+                android:theme="@style/RatingBar"
+                android:stepSize="0.5"
+                android:layout_below="@+id/cardview1"
+                android:layout_alignStart="@+id/cardview1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="17dp"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/performerProfile_star"
+                android:layout_alignBottom="@+id/performerProfile_star"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginBottom="-2dp"
+                android:layout_toEndOf="@+id/performerProfile_star"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/performerProfile_reviewsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView17"
+                android:layout_alignBottom="@+id/textView17"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_toEndOf="@+id/textView17"
+                android:text="21" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/performerProfile_reviewsCount"
+                android:layout_alignBottom="@+id/performerProfile_reviewsCount"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/performerProfile_reviewsCount"
+                android:text="Reviews" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/performerprofile_tablayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryLight"
+            app:itemIconTint="@color/bottom_nav_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/bottom_nav_color" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/performerprofile_viewpager_id"
+            android:layout_width="match_parent"
+            android:layout_height="472dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/performerprofile_tablayout_id"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

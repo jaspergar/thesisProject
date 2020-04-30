@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layout_marginBottom="4dp">
+
+
+    <ImageView
+        android:id="@+id/barevent_photo_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jazz" />
+
+    <!--<Button-->
+        <!--android:id="@+id/cancel_btn_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:text="Cancel"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:background="@drawable/button_round_cancel"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/event_gradient" />
+
+    <TextView
+        android:id="@+id/barevent_startTime_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="8:00"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/barevent_startTime_PM-AM_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="4dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:text="PM"-->
+        <!--android:textColor="@color/colorPrimaryLight"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/barevent_startTime_id" />-->
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="-"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barevent_startTime_id" />
+
+    <TextView
+        android:id="@+id/barevent_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="5:00"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dash" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/barevent_endTime_PM-AM_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="4dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:text="AM"-->
+        <!--android:textColor="@color/colorPrimaryLight"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/barevent_endTime" />-->
+
+    <TextView
+        android:id="@+id/barevent_date_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:text="March 05, 019"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/barevent_startTime_id"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/barevent_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:text="The Best Event"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/barevent_date_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView17"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/twitterblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="THE PERFORMER"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView18"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#ff007f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView17">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/barevent_pphoto_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgplaceholder" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/barevent_pname_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="pname"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/barevent_ptype_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bartype"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="12sp" />
+            <TextView
+                android:id="@+id/barevent_pcategory_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="category"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="12sp" />
+
+
+
+            <RatingBar
+                android:id="@+id/barevent_prating_id"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/twitterblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView18" >
+        <TextView
+            android:id="@+id/barevent_barname_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Club"
+            android:textColor="@color/colorPrimaryLight" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

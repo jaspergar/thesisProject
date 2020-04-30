@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".activities.UserRegistrationForm">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--user type-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/e_button_usertype"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="User Type"
+            android:gravity="center"
+            android:background="@drawable/button_round"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/e_tv_usertype"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/e_button_usertype"
+            android:layout_marginLeft="15dp"
+            android:padding="2dp"
+            android:text="Click Button to set User Type"/>
+
+    </RelativeLayout>
+
+    <!--fname-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="17sp"
+            android:padding="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_account_circle_gold_24dp"
+            android:drawablePadding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--lname-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="17sp"
+            android:padding="15dp"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_account_circle_gold_24dp"
+            android:drawablePadding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="17sp"
+            android:padding="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_email_gold_24dp"
+            android:drawablePadding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:passwordToggleEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="17sp"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--name-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone_iphone_gold_24dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--gender-->
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Gender :"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <RadioButton
+            android:id="@+id/r_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:theme="@style/MyRadioButton"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/r_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:theme="@style/MyRadioButton"
+            />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/dobrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/e_button_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Date of Birth"
+            android:background="@drawable/button_round"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/e_tv_dob"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/e_button_dob"
+            android:layout_marginLeft="15dp"
+            android:padding="2dp"
+            android:text="Click Button to set Birthdate"/>
+
+    </RelativeLayout>
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@+id/dobrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressbar_register"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateBehavior="cycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <!--button-->
+    <Button
+        android:id="@+id/B_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:background="@drawable/button_round"
+        />
+        </RelativeLayout>
+    <!--have account-->
+    <TextView
+        android:id="@+id/T_toLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Already have an account? click here to login!"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:focusable="true"
+        />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

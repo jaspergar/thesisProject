@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BarProfile">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contraint_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/barprofile_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/barprofile_image_id"
+            app:layout_constraintEnd_toEndOf="@+id/barprofile_image_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/barprofile_image_id"
+            app:layout_constraintTop_toTopOf="@+id/barprofile_image_id"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/gradient_bg" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/BarP_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Bar name"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/barprofile_image_id" />
+
+            <TextView
+                android:id="@+id/BarP_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Bar Type"
+                android:textColor="@color/colorPrimaryLight" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/BarP_Rating"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:text="STARS RATING"-->
+                    <!--android:textColor="@color/colorPrimaryLight" />-->
+
+                <RatingBar
+                    android:id="@+id/barp_ratingbars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style = "?android:attr/ratingBarStyleSmall"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:theme="@style/RatingBar"
+                    android:stepSize="0.5"
+                    android:layout_marginRight="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="|"
+                    android:textColor="@color/colorPrimaryLight" />
+
+                <TextView
+                    android:id="@+id/BarP_ReviewCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryLight" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="Reviews"
+                    android:textColor="@color/colorPrimaryLight" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="10:00"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:text="PM" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="2:00"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="AM" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="Mon"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="Fri"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <!--<Button-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/rating_round"-->
+                <!--android:text="Follow"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:textColor="@color/colorPrimaryLight"-->
+                <!--android:textSize="10sp"/>-->
+
+
+            </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/barprofile_unfollow_btn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/barprofile_follow_btn"
+        android:background="@drawable/unfollow_round"
+        android:text="following"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/barprofile_follow_btn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/follow_round"
+        android:text="Follow"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp" />
+</RelativeLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/barprofile_tablayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryLight"
+            app:itemIconTint="@color/bottom_nav_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/bottom_nav_color" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/barprofile_viewpager_id"
+            android:layout_width="match_parent"
+            android:layout_height="472dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barprofile_tablayout_id"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--</LinearLayout>-->
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

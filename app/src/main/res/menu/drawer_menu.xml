@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/side_i_followed_id"
+            android:icon="@drawable/ic_local_bar_black_24dp"
+            android:title="Following"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+            <item android:id="@+id/ma_side_performer_followed_id"
+                android:icon="@drawable/ic_people_black_24dp"
+                android:title="My Followers"/>
+            <item android:id="@+id/ma_side_people_followed_id"
+                android:icon="@drawable/ic_event_available_black_24dp"
+                android:title="My Schedule"/>
+    </group>
+
+    <item android:title="Authentication">
+          <menu>
+              <item android:id="@+id/side_logout_id"
+                  android:icon="@drawable/ic_logout_black_24dp"
+                  android:title="Logout"/>
+          </menu>
+    </item>
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:elevation="20dp"
+
+        app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/partyGoerProfile_performerfollowed_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgplaceholder" />
+
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/partyGoerProfile_performerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Performer Name"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/partyGoerProfile_performerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="Performer type"/>
+
+        <RelativeLayout
+            android:id="@+id/toprated_rl"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rating_round">
+            <TextView
+                android:id="@+id/partyGoerProfile_performerRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.6"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryLight"/>
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/partyGoerProfile_performerBTNfollow"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/follow_round"
+        android:textColor="@color/colorPrimary"
+        android:text="follow"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="25dp"
+        android:textSize="10sp"
+        />
+    <Button
+        android:id="@+id/partyGoerProfile_performerBTNunfollow"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/unfollow_round"
+        android:textColor="@color/colorPrimaryLight"
+        android:text="following"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="25dp"
+        android:textSize="10sp"
+        />
+</RelativeLayout>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

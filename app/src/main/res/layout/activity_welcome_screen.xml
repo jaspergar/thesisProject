@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeScreen"
+    android:background="@color/colorPrimaryLight">
+
+
+    <ImageView
+        android:id="@+id/welcomeS_logo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="158dp"
+        android:layout_above="@+id/welcomeS_header_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/enomlogo" />
+
+    <TextView
+        android:id="@+id/welcomeS_header_id"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/textinput1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="ENOM"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/welcomeS_description_id"-->
+        <!--android:layout_width="354dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/textinput1"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginStart="28dp"-->
+        <!--android:layout_marginEnd="28dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word."-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="15sp" />-->
+
+    <!--email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput1"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textinput2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/tabindicator">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_welcomeS_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textinput1"
+            android:drawableLeft="@drawable/ic_email_gold_24dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput2"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welcomeS_forgotpass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/tabindicator"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_welcomeS_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/welcomeS_getstarted_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/welocomS_button_register"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="25dp"-->
+        <!--android:layout_marginBottom="172dp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="GET STARTED AND CLICK THE REGISTER BUTTON NOW !"-->
+        <!--android:textColor="@color/colorPrimaryLight"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--remember me-->
+    <TextView
+        android:id="@+id/welcomeS_forgotpass"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welocomS_button_login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="10dp"
+        android:buttonTint="@color/colorAccent"
+        android:gravity="right"
+        android:text="Forgot password?"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar_login"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+       android:layout_above="@+id/welcomeS_logo_id"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateBehavior="cycle" />
+
+    <Button
+        android:id="@+id/welocomS_button_login"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welcomeS_register_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_round"
+        android:padding="5dp"
+        android:text="Login"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/welcomeS_register_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="54dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Don't have an account? click here and Register!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    </RelativeLayout>

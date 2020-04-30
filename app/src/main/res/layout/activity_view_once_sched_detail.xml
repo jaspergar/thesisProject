@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewOnceSchedDetail">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView12"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/oncesched_datail_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/imgplaceholder" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/oncesched_datail_barname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Bar name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/cardView12"
+        app:layout_constraintTop_toTopOf="@+id/cardView12" />
+
+    <TextView
+        android:id="@+id/oncesched_datail_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Regular Show"
+        app:layout_constraintStart_toEndOf="@+id/cardView12"
+        app:layout_constraintTop_toBottomOf="@+id/oncesched_datail_barname" />
+
+    <TextView
+        android:id="@+id/oncesched_datail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="8/19/19"
+        app:layout_constraintStart_toStartOf="@+id/oncesched_datail_type"
+        app:layout_constraintTop_toBottomOf="@+id/oncesched_datail_type" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/oncesched_datail_date"
+        app:layout_constraintStart_toEndOf="@+id/oncesched_datail_date"
+        app:layout_constraintTop_toTopOf="@+id/oncesched_datail_date" />
+
+    <TextView
+        android:id="@+id/oncesched_datail_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="8:00 PM"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/oncesched_datail_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="9:00 PM"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/oncesched_datail_startTime"
+        app:layout_constraintStart_toEndOf="@+id/oncesched_datail_startTime"
+        app:layout_constraintTop_toTopOf="@+id/oncesched_datail_startTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/oncesched_detail_eventdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/cardView12"
+        app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oncesched_detail_eventdescription">
+
+        <ImageView
+            android:id="@+id/oncesched_detail_eventphoto"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/imgplaceholder" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/oncesched_detail_btnApply"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_apply"
+        android:text="Apply"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+    <Button
+        android:id="@+id/oncesched_detail_btnPending"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pending"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:background="@drawable/button_pending"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+    <Button
+        android:id="@+id/oncesched_detail_btnOccupied"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Occupied"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:background="@drawable/button_occupied"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+    <Button
+        android:id="@+id/oncesched_detail_btnDenied"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Denied"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:background="@drawable/button_denied"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+
+    <Button
+        android:id="@+id/oncesched_detail_btnScheduled"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Your Set"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:background="@drawable/button_apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+
+    <Button
+        android:id="@+id/oncesched_detail_btnAccepted"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Accepted"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:background="@drawable/button_accepted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+    <Button
+        android:id="@+id/oncesched_detail_cancelApply"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cancel Apply"
+        android:layout_width="200dp"
+        android:visibility="gone"
+        android:background="@drawable/button_round_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oncesched_detail_btnPending" />
+
+    <Button
+        android:id="@+id/oncesched_detail_cancelReject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Reject"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:background="@drawable/button_denied"
+        app:layout_constraintStart_toEndOf="@+id/oncesched_detail_cancelAccept"
+        app:layout_constraintTop_toTopOf="@+id/oncesched_detail_cancelAccept" />
+
+    <Button
+        android:id="@+id/oncesched_detail_cancelAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        android:background="@drawable/button_accepted"
+        android:text="Accept"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

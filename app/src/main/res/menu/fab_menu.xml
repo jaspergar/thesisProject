@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+     <item
+         android:id="@+id/floating_image"
+         android:icon="@drawable/icon_image"
+         android:title="With Image Post"
+         />
+    <item
+        android:id="@+id/floating_video"
+        android:icon="@drawable/icon_video"
+        android:title="With Video Post"
+        />
+</menu>

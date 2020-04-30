@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_marginRight="2dp"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+         <!--<LinearLayout-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="130dp"-->
+             <!--android:orientation="vertical">-->
+
+
+    <ImageView
+        android:id="@+id/suggested_barImage_id"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/imgplaceholder" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/suggested_barImage_id"
+        app:layout_constraintEnd_toEndOf="@+id/suggested_barImage_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/suggested_barImage_id"
+        app:layout_constraintTop_toTopOf="@+id/suggested_barImage_id"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gradient_bg" />
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginBottom="100dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="@drawable/follow_round">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/suggested_barFollow_id"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginStart="0dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Follow"-->
+            <!--android:textColor="@color/colorPrimaryLight"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textStyle="bold" />-->
+    <!--</RelativeLayout>-->
+<!--<TextView-->
+    <!--android:id="@+id/suggested_bartype_id"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="Bar Type"-->
+    <!--android:textColor="@color/colorPrimaryLight"/>-->
+
+    <Button
+        android:id="@+id/suggested_barfollow_id"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/follow_round"
+        android:text="Follow"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"/>
+
+            <Button
+                android:id="@+id/suggested_barunfollow_id"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/unfollow_round"
+                android:text="Following"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="8sp"/>
+    <RelativeLayout
+        android:id="@+id/suggested_ratingRelativeL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/rating_round">
+
+        <TextView
+            android:id="@+id/suggested_barRating_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:text="4.5"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/suggested_barImage_id"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/suggested_barName_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text="Bar Name"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/suggested_barType_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Bar Location"
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/suggested_baropen_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="8:00 PM"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="-"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/suggested_barclose_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="4:00 AM"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+         <!--</LinearLayout>-->
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

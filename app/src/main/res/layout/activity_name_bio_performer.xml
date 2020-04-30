@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeScreen"
+    android:background="@color/colorPrimaryLight">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textinput1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="64dp"
+        android:text="What will we call you?"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/temporaryicon" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/welcomeS_header_id"-->
+        <!--android:layout_width="132dp"-->
+        <!--android:layout_height="41dp"-->
+        <!--android:layout_above="@+id/textinput1"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginStart="139dp"-->
+        <!--android:layout_marginEnd="139dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="ENOM"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/welcomeS_description_id"-->
+    <!--android:layout_width="354dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/textinput1"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginStart="28dp"-->
+    <!--android:layout_marginEnd="28dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word."-->
+    <!--android:textColor="@color/colorPrimaryDark"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput1"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welcomeS_forgotpass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/tabindicator">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/performer_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textinput1"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="e.g 6 Cycle Mind"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--&lt;!&ndash;password&ndash;&gt;-->
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+        <!--android:id="@+id/textinput2"-->
+        <!--android:layout_width="290dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/welcomeS_forgotpass"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginEnd="51dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:textColorHint="@color/tabindicator"-->
+        <!--app:passwordToggleEnabled="true">-->
+
+        <!--<com.google.android.material.textfield.TextInputEditText-->
+            <!--android:id="@+id/e_welcomeS_password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableStart="@drawable/ic_lock_black_24dp"-->
+            <!--android:drawableLeft="@drawable/ic_lock_black_24dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:ems="10"-->
+            <!--android:hint="Password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:padding="15dp"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:textColorHint="@color/colorPrimaryDark"-->
+            <!--android:textSize="17sp" />-->
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/welcomeS_getstarted_id"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/welocomS_button_register"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="25dp"-->
+    <!--android:layout_marginBottom="172dp"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="GET STARTED AND CLICK THE REGISTER BUTTON NOW !"-->
+    <!--android:textColor="@color/colorPrimaryLight"-->
+    <!--android:textSize="15sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--remember me-->
+    <TextView
+        android:id="@+id/welcomeS_forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textinput2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="@color/colorAccent"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="A Short Description"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput2"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_ok"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/tabindicator">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/performer_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textinput1"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Description"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/button_round"
+        android:padding="5dp"
+        android:text="Ok"
+        android:textColor="#ffffff" />
+
+
+
+</RelativeLayout>

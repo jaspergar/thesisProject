@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e78c11</color>
+    <color name="colorPrimaryDark">#000F08</color>
+    <color name="colorPrimaryLight">#FFFFFF</color>
+    <color name="colorAccent">#FAA916</color>
+    <color name="background">#0078FF</color>
+    <color name="tabindicator">#2d2d2d</color>
+    <color name="grey">#bbbbbb</color>
+    <color name="grey2">#cccccc</color>
+    <color name="lightgrey">#ddd</color>
+    <color name="twitterblue">#1DA1F2</color>
+    <color name="grey3">#F5F5F5</color>
+    <color name="mint">#ebfcf5</color>
+
+
+</resources>

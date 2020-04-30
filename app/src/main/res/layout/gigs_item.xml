@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/performeract_oncesched_profilepic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/imgplaceholder" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/performeract_oncesched_name"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:text="Live Super Club"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+
+    <TextView
+        android:id="@+id/performeract_onceshed_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="Event"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/performeract_oncesched_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/performeract_oncesched_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="9/24/19"
+        app:layout_constraintStart_toStartOf="@+id/performeract_onceshed_type"
+        app:layout_constraintTop_toBottomOf="@+id/performeract_onceshed_type" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/performeract_oncesched_date"
+        app:layout_constraintStart_toEndOf="@+id/performeract_oncesched_date"
+        app:layout_constraintTop_toTopOf="@+id/performeract_oncesched_date" />
+
+    <TextView
+        android:id="@+id/performeract_onceshed_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="8:00 PM"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/performeract_onceshed_starttime"
+        app:layout_constraintStart_toEndOf="@+id/performeract_onceshed_starttime"
+        app:layout_constraintTop_toTopOf="@+id/performeract_onceshed_starttime" />
+
+    <TextView
+        android:id="@+id/performeract_onceshed_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="9:00 PM"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gigs_oncesched_accepted"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#77dd77"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Accepted"
+        android:textColor="@color/colorPrimaryLight" />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gigs_oncesched_set"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#026838"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your Set"
+            android:textColor="@color/colorPrimaryLight" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gigs_oncesched_invited"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/twitterblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your Invited"
+            android:textColor="@color/colorPrimaryLight" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gigs_oncesched_vacant"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#026838"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vacant"
+            android:textColor="@color/colorPrimaryLight" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gigs_oncesched_pending"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#FAA916"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryLight"
+            android:gravity="center"
+            android:text="Pending"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gigs_oncesched_denied"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#FB202D"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryLight"
+            android:gravity="center"
+            android:text="Denied"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gigs_oncesched_occupied"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#CB202D"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryLight"
+            android:gravity="center"
+            android:text="Occupied"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

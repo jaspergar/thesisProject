@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".activities.PartyGoerProfile">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/partyGoerProfile_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dj" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/partyGoerProfile_btnFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="39dp"
+            android:text="follow"
+            android:background="@drawable/follow_round"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/partyGoerProfile_btnunFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="29dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginBottom="39dp"
+            android:text="following"
+            android:background="@drawable/unfollow_round"
+            android:textColor="@color/colorPrimaryLight" />
+
+        <TextView
+            android:id="@+id/partyGoerProfile_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/partyGoerProfile_Age"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/cardview1"
+            android:text="Jasper"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/partyGoerProfile_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/partyGoerProfile_Age"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/partyGoerProfile_fname"
+            android:text="Gar"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/partyGoerProfile_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/partyGoerProfile_Gender"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/cardview1"
+            android:text="19"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/partyGoerProfile_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cardview1"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/cardview1"
+            android:text="Male" />
+
+        <TextView
+            android:id="@+id/partyGoerProfile_numFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-75dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/cardview1"
+            android:text="299" />
+
+        <TextView
+            android:id="@+id/partyGoerProfile_Followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/partyGoerProfile_numFollowers"
+            android:text="followers" />
+
+        <TextView
+            android:id="@+id/partyGoerProfile_numFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/partyGoerProfile_Followers"
+            android:text="300" />
+        <TextView
+            android:id="@+id/partyGoerProfile_Following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/partyGoerProfile_numFollowing"
+            android:text="following" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Bar Followed"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/partyGoerProfile_BarfollowedRV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Performer Followed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partyGoerProfile_BarfollowedRV" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/partyGoerProfile_performerfollowedRV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="PartyG-Goer Followed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/partyGoerProfile_performerfollowedRV" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/partyGoerProfile_partyGoerfollowedRV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

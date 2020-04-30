@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/notsuggested_barImage_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/imgplaceholder" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/not_suggested_barname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Bar Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cardView7"
+        app:layout_constraintTop_toTopOf="@+id/cardView7" />
+
+    <TextView
+        android:id="@+id/not_suggested_barlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Bar Location"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/not_suggested_barname"
+        app:layout_constraintTop_toBottomOf="@+id/not_suggested_barname" />
+
+    <TextView
+        android:id="@+id/not_suggested_barOpenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="4:00"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/not_suggested_barlocation"
+        app:layout_constraintTop_toBottomOf="@+id/not_suggested_barlocation" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="PM"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/not_suggested_barOpenTime"
+        app:layout_constraintTop_toTopOf="@+id/not_suggested_barOpenTime" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/not_suggested_barlocation" />
+
+    <TextView
+        android:id="@+id/not_suggested_barCloseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="2:00"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="AM"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/not_suggested_barCloseTime"
+        app:layout_constraintStart_toEndOf="@+id/not_suggested_barCloseTime" />
+
+    <RelativeLayout
+        android:id="@+id/notsuggested_ratingRelativeL_id"
+        android:layout_width="45dp"
+        android:layout_height="27dp"
+
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rating_round"
+        app:layout_constraintStart_toStartOf="@+id/not_suggested_barOpenTime"
+        app:layout_constraintTop_toBottomOf="@+id/not_suggested_barOpenTime">
+
+        <TextView
+            android:id="@+id/notsuggested_barRating_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="4.5"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/notsug_btnfollow"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/follow_round"
+        android:text="follow"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/notsug_btnunfollow"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/unfollow_round"
+        android:text="following"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notsuggested_bartype_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Resto Bar"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/notsuggested_ratingRelativeL_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/notsuggested_ratingRelativeL_id"
+        app:layout_constraintStart_toEndOf="@+id/notsuggested_ratingRelativeL_id"
+        app:layout_constraintTop_toBottomOf="@+id/not_suggested_barCloseTime" />
+
+    <TextView
+        android:id="@+id/notsuggested_bar_feedback_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="21"
+        app:layout_constraintBottom_toBottomOf="@+id/notsuggested_ratingRelativeL_id"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Reviews"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/notsuggested_bar_feedback_count"
+        app:layout_constraintStart_toEndOf="@+id/notsuggested_bar_feedback_count" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.666" />
+</androidx.constraintlayout.widget.ConstraintLayout>
